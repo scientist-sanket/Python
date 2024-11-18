@@ -29,9 +29,9 @@
 #     i+=1
 # print("Sum is ",sum)
 
-n=5
-fact=1
-for el in range(1,n+1):
-    fact*=el
+# n=5
+# fact=1
+# for el in range(1,n+1):
+#     fact*=el
 
-print("Factorial is ",fact)
+# print("Factorial is ",fact)
