@@ -12,17 +12,20 @@ if len(str(a)) == 3:
         a_sorted_num =int(''.join(sorted(a_num)))
         d_sorted_num = int(''.join(sorted(a_num,reverse=True)))
 
-        print(a_sorted_num)
-        print(d_sorted_num)
+        print("Ascending sort- ",a_sorted_num)
+        print("Descending sort- ",d_sorted_num)
 
         diff=(d_sorted_num) - (a_sorted_num)
+        if len(str(diff)) < 3:
+            diff= "0" + str(diff)
 
+        print(f"Difference of {d_sorted_num} and {a_sorted_num}:- {diff}")
         rev_diff=int(''.join(reversed(str(diff))))
-        print(rev_diff)
+        print(f"Reverse of {diff}:- {rev_diff}")
 
-        add=(diff) + (rev_diff)
+        add=int(diff) + int(rev_diff)
 
-        print(add)
+        print(f"Sum of {diff} and {rev_diff}:- {add}")
 else:
     print("Not a 3 digit number")
 
