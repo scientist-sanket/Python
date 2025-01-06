@@ -51,7 +51,6 @@
 #         list.pop(idx)
 #         list.insert(idx,"@")
 #     idx+=1
-
 # result = "".join(list)
 # print(result)
        
@@ -73,7 +72,7 @@
 #     else:
 #         return fibonacci(n-1) + fibonacci(n-2)
 # sum=0
-# num=int(input("Enter a number: "))
+# num=int(input("Enter term upto: "))
 # for i in range(num):
 #     sum+=fibonacci(i)
 # print(f"Sum of Fibonacci series upto {num}th terms {sum}")
@@ -91,10 +90,8 @@
 
 #         # Print the right half (reverse of left half)
 #         for j in range(n - i - 1, -1, -1):
-#             print(chr(65 + j), end="")
-        
+#             print(chr(65 + j), end="")       
 #         print()  # Move to the next line
-
 # # Number of rows
 # n = 6  # This corresponds to the height of the pattern
 # generate_pattern(n)
@@ -122,33 +119,27 @@
 
 # num=input("Enter a number: ")
 # ls=list(num)
-
 # idx=0
 # for val in num:
 #     if val==0:
 #         ls.pop(idx)
-        
 #         ls.append(0)
 #     idx+=1
-
 # print(ls)
 
 # term=int(input("Enter number of terms: "))
 # even=0
 # odd=0
-
 # for i in range(term+1):
 #     if i%2==0:
 #         even+=i
 #     else:
 #         odd+=i
-
-# print(f"EVEN = {even}")
-# print(f"ODD = {odd}")
+# print(f"Sum of EVEN = {even}")
+# print(f"Sum of ODD = {odd}")
 
 # ch=input("Enter any alphabet or digit: ")
 # vowels="aeiouAEIOU"
-
 # if ch.isdigit():
 #     print(f"{ch} is a digit")
 # elif ch.isalpha():
@@ -194,16 +185,12 @@
 # num=int(input("How many numbers: "))
 # avg=0
 # ls=[]
-# for i  in range(num):
+# for i in range(num):
 #     num=int(input("Enter number: "))
 #     ls.append(num)
-# minimum=min(ls)
-# maximum=max(ls)
-
 # term=len(ls)
 # for i in ls:
 #     avg=avg + i
-
 # print(avg/term)
 
 # class Car:
@@ -240,3 +227,83 @@
 #         newlist.append(x)
 
 # print(newlist)
+# num1=1
+# num2=2
+# num3=3
+# *num,Mynum=num1,num2,num3
+# print(*num)
+# print(num)
+# print(Mynum)
+
+# Using recursive function for reverse a string
+# def reverse_strings(s):
+#     if len(s)==0:
+#         return s
+#     return s[-1] + reverse_strings(s[:-1])
+
+# #program to reverse a string
+# text="Hello World!"
+# # rev_str=""                     
+# # for char in text:              #using for loop
+# #     rev_txt=char + rev_str
+# # rev_txt=text[::-1]             #using slicing
+# # rev_txt="".join(reversed(text))  #using reversed() and join()
+# rev_txt=reverse_strings(text)
+# print(rev_txt)
+
+# txt="Aman asks, \"How are you?\""
+# print(txt)
+# print(txt.index("a"))
+
+# import re
+# txt="The rain in Spain"
+# x=re.search("\s",txt)
+# y=re.findall("in",txt)
+# print("The first white space character is located in position: ",x.start())
+# print(y)
+
+# class Numbers:
+#     def __init__(self):
+#         self.list=[]
+#         self.max_value=0
+
+#     def insert_element(self):
+#         num=int(input("Enter no of elements:"))
+#         for i in range(num):
+#             number=input()
+#             self.list.append(number)
+
+#     def find_max(self):
+#         self.max_value=max(self.list)
+#         print(self.max_value)
+
+# num1=Numbers()
+# num1.insert_element()
+# num1.find_max()
+
+# str1="abcd"
+# str2="pq"
+# merged=[]
+# min_length=min(len(str1),len(str2))
+# for i in range(min_length):
+#     merged.append(str1[i])
+#     merged.append(str2[i])
+# merged.append(str1[min_length:])
+# merged.append(str2[min_length:])
+# merge_str=''.join(merged) 
+# print(merge_str)
+
+# word1="ABCDEF"
+# word2="ABC"
+# word3=[]
+# min_length=min(len(word1),len(word2))
+# for i in range(min_length):
+#     if word1[i] == word2[i]:
+#         word3.append(word1[i])
+
+# set_str=set(word3)
+# gcd_str=''.join(map(str,set_str))
+# print(gcd_str)
+
+
+
